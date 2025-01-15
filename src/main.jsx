@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import Error404 from './Pages/Error404.jsx'
 import ComponentsPage from './Pages/ComponentsPage/ComponentsPage.jsx'
+import DocsPage from './Pages/Docs/DocsPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,11 @@ const router = createBrowserRouter([
   {
     path:'/Components',
     element: <ComponentsPage/>,
+    errorElement: <Error404/>
+  },
+  {
+    path:'/Docs',
+    element: <DocsPage/>,
     errorElement: <Error404/>
   }
 ])
