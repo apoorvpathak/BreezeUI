@@ -1,4 +1,24 @@
 function Buttons() {
+    function handleClickBtn1(){
+        navigator.clipboard.writeText("<button className='bg-blue-500 px-6 font-medium text-white py-2 rounded-md hover:bg-blue-600 hover:font-normal'>Button 1</button>").then(()=>{
+            // display toast message
+        })
+    }
+    function handleClickBtn2(){
+        navigator.clipboard.writeText("<button className='bg-purple-500 text-white px-6 font-medium py-2 rounded-md hover:bg-purple-600 hover:font-normal'>Button 2</button>").then(()=>{
+            // display toast message
+        })
+    }
+    function handleClickBtn3(){
+        navigator.clipboard.writeText("<button className='text-black font-medium ring-1 ring-black px-6 py-2 rounded-md hover:font-normal hover:bg-black hover:text-white'>Button 3</button>").then(()=>{
+            // display toast message
+        })
+    }
+    function handleClickBtn4(){
+        navigator.clipboard.writeText("<button className='text-white font-medium ring-1 ring-white px-6 py-2 rounded-md hover:font-normal hover:bg-white hover:text-black'>Button 4</button>").then(()=>{
+            // display toast message
+        })
+    }
     return (
         <>
             <div className='text-white font-inter mt-12 md:flex md:items-center md:justify-evenly'>
@@ -12,24 +32,24 @@ function Buttons() {
 
                 <div className='space-y-4'>
                     <div className='md:flex space gap-x-4'>
-                        <div className='w-64 h-32 bg-gray-200 flex items-center justify-center'>
+                        <div onClick={handleClickBtn1} className='w-64 h-32 bg-gray-200 flex items-center justify-center'>
                             <div>
                                 <button className='bg-blue-500 px-6 font-medium text-white py-2 rounded-md hover:bg-blue-600 hover:font-normal'>Button 1</button>
                             </div>
                         </div>
-                        <div className='w-64 h-32 bg-gray-200 flex items-center justify-center'>
+                        <div onClick={handleClickBtn2} className='w-64 h-32 bg-gray-200 flex items-center justify-center'>
                             <div>
                                 <button className='bg-purple-500 text-white px-6 font-medium py-2 rounded-md hover:bg-purple-600 hover:font-normal'>Button 2</button>
                             </div>
                         </div>
                     </div>
                     <div className='md:flex space gap-x-4'>
-                        <div className='w-64 h-32 bg-gray-200 flex items-center justify-center'>
+                        <div onClick={handleClickBtn3} className='w-64 h-32 bg-gray-200 flex items-center justify-center'>
                             <div>
                                 <button className='text-black font-medium ring-1 ring-black px-6 py-2 rounded-md hover:font-normal hover:bg-black hover:text-white'>Button 3</button>
                             </div>
                         </div>
-                        <div className='w-64 h-32 bg-gray-950 flex items-center justify-center'>
+                        <div onClick={handleClickBtn4} className='w-64 h-32 bg-gray-950 flex items-center justify-center'>
                             <div>
                                 <button className='text-white font-medium ring-1 ring-white px-6 py-2 rounded-md hover:font-normal hover:bg-white hover:text-black'>Button 4</button>
                             </div>
