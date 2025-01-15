@@ -22,7 +22,7 @@ function Home() {
         </p>
         <div className='my-3 mt-8 space-x-3'>
         <Link to={'/Components'} className='text-white font-medium bg-blue-500 px-3 py-3 rounded-md hover:bg-blue-600'>Components</Link>
-        <Link className='text-white font-medium ring-1 ring-white px-3 py-3 rounded-md hover:font-normal'>Read Docs</Link>
+        <Link to={'/Docs'} className='text-white font-medium ring-1 ring-white px-3 py-3 rounded-md hover:font-normal'>Read Docs</Link>
         </div>
 
     </div>
