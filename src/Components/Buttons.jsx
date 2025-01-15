@@ -14,12 +14,12 @@ function Buttons() {
                     <div className='md:flex space gap-x-4'>
                         <div className='w-64 h-32 bg-gray-200 flex items-center justify-center'>
                             <div>
-                                <button className='bg-blue-500 px-6 font-medium py-2 font-inter rounded-md hover:bg-blue-600 hover:font-normal'>Button 1</button>
+                                <button className='bg-blue-500 px-6 font-medium text-white py-2 rounded-md hover:bg-blue-600 hover:font-normal'>Button 1</button>
                             </div>
                         </div>
                         <div className='w-64 h-32 bg-gray-200 flex items-center justify-center'>
                             <div>
-                                <button className='bg-purple-500 px-6 font-medium py-2 font-inter rounded-md hover:bg-purple-600 hover:font-normal'>Button 2</button>
+                                <button className='bg-purple-500 text-white px-6 font-medium py-2 rounded-md hover:bg-purple-600 hover:font-normal'>Button 2</button>
                             </div>
                         </div>
                     </div>
