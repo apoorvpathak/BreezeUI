@@ -25,15 +25,15 @@ function Buttons() {
         <>
             <div className='text-white font-inter mt-12 md:flex md:items-center md:justify-evenly'>
 
-                <div className="flex justify-center md:block">
+                <div className="flex justify-center md:block mb-4">
                     
-                <p className='text-2xl font-medium text-gray-200 px-4'>Buttons</p>
+                <p className='text-2xl font-medium text-gray-200 px-4 md:text-3xl md:font-bold'>Buttons</p>
                 </div>
 
 
 
-                <div className='space-y-4'>
-                    <div className='md:flex space gap-x-4'>
+                <div className='space-y-4 flex flex-col items-center'>
+                    <div className='md:flex space-y-4 md:space-y-0 gap-x-4'>
                         <div onClick={handleClickBtn1} className='w-64 h-32 bg-gray-200 flex items-center justify-center'>
                             <div>
                                 <button className='bg-blue-500 px-6 font-medium text-white py-2 rounded-md hover:bg-blue-600 hover:font-normal'>Button 1</button>
@@ -45,7 +45,7 @@ function Buttons() {
                             </div>
                         </div>
                     </div>
-                    <div className='md:flex space gap-x-4'>
+                    <div className='md:flex space-y-4 md:space-y-0 gap-x-4'>
                         <div onClick={handleClickBtn3} className='w-64 h-32 bg-gray-200 flex items-center justify-center'>
                             <div>
                                 <button className='text-black font-medium ring-1 ring-black px-6 py-2 rounded-md hover:font-normal hover:bg-black hover:text-white'>Button 3</button>
