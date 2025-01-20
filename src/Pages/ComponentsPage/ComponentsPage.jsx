@@ -1,3 +1,4 @@
+import Badges from '../../Components/Badges';
 import Buttons from '../../Components/Buttons';
 import Navbar from '../../Components/Navbar';
 function ComponentsPage() {
@@ -9,6 +10,7 @@ function ComponentsPage() {
                 <p className='text-white font-inter'>Click on the component to copy code.</p>
             </div>
             <Buttons/>
+            <Badges/>
         </>
     );
 }
